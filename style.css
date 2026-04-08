@@ -2558,8 +2558,8 @@ footer a:hover {
   }
 
   .carousel-arrow {
-    background: rgba(212, 175, 55, 0.2);
-    border: 2px solid #D4AF37;
+    background: rgba(30, 111, 191, 0.15);
+    border: 2px solid #1E6FBF;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -2568,13 +2568,13 @@ footer a:hover {
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    color: #D4AF37;
+    color: #1E6FBF;
     padding: 0;
   }
 
   .carousel-arrow:active {
-    background: #D4AF37;
-    color: #1A1A1A;
+    background: #1E6FBF;
+    color: #fff;
     transform: scale(0.95);
   }
 
@@ -2604,10 +2604,10 @@ footer a:hover {
   }
 
   .carousel-dot.active {
-    background: #D4AF37;
+    background: #1E6FBF;
     width: 12px;
     height: 12px;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    box-shadow: 0 0 10px rgba(30, 111, 191, 0.5);
   }
 
 }
@@ -3153,7 +3153,7 @@ footer a:hover {
 }
 
 .review-stars {
-  color: var(--color-gold);
+  color: #F59E0B;
   letter-spacing: 2px;
   font-size: 0.9rem;
 }
@@ -3367,7 +3367,7 @@ footer a:hover {
 }
 
 .stars-large {
-  color: var(--color-gold);
+  color: #F59E0B;
   font-size: 1.5rem;
   letter-spacing: 2px;
   margin-bottom: 0.25rem;
@@ -3411,7 +3411,7 @@ footer a:hover {
 
 .rating-bar-fill {
   height: 100%;
-  background-color: var(--color-gold);
+  background-color: #1E6FBF;
   border-radius: 4px;
 }
 
