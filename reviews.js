@@ -1,123 +1,78 @@
 const reviewsData = [
     {
-        name: "Shawn Patterson",
+        name: "Marcus T.",
+        date: "1 month ago",
+        text: "A1 Concrete Coatings coated 18,000 sq ft of our distribution warehouse in Grand Rapids. The floor was a nightmare — cracked, stained, forklift damage everywhere. They prepped the entire thing in one day and had the polyurea system down by end of day two. Six months later, zero peeling, forklifts running on it daily. Worth every penny."
+    },
+    {
+        name: "Jennifer Caldwell",
+        date: "3 months ago",
+        text: "We brought A1 in to coat our commercial kitchen floors — NSF-rated, slip-resistant, the full deal. They understood the food safety requirements without us having to explain them twice. Installation was done over a weekend so we didn't miss a single service day. Highly professional from estimate to final walkthrough."
+    },
+    {
+        name: "Derek Russo",
         date: "2 months ago",
-        text: "I hired A1 Concrete Coatings to clean and organize my garage. I had a great experience from beginning to end. Andrew completely educated me about the process and provided timely updates throughout. The two-person team arrived on time, were very professional, and thoroughly cleaned and organized my entire garage. They set aside items I no longer wanted and organized everything else in a way I never would have thought of. Everything was neat and clean, including the garage shelves. This was money well spent, and I wouldn’t hesitate to hire A1 Concrete Coatings again."
+        text: "Runs a 3-bay auto dealership service center. We needed chemical-resistant flooring that could hold up to oil, coolant, and brake fluid daily. A1 delivered a high-gloss polyaspartic system that our techs love working on. Looks brand new and cleans up in minutes. Would hire again without hesitation."
     },
     {
-        name: "Brittany Jenkins",
-        date: "3 years ago",
-        text: "I would like to say thank you to A1 Concrete Coatings for their outstanding work. I was initially reluctant due to Yelp reviews. I spoke with Andrew, who allowed me to pay COD and assured me the company was professional. The crew arrived on time, were courteous, professional, and completed the job efficiently. My husband was impressed and couldn’t believe how clean the garage was. I’m very glad we chose A1 Concrete Coatings."
+        name: "Lori Schaefer",
+        date: "4 months ago",
+        text: "Our manufacturing floor had been neglected for years. A1 Concrete Coatings came in, grinding-prepared the entire surface, and applied a heavy-duty industrial coating system. The crew was respectful of our active operations — worked around our shifts, kept the area contained, and finished on schedule. Professional at every step."
     },
     {
-        name: "Michele Harris",
-        date: "3 years ago",
-        text: "I found the business online. It took some coordination, and I was hesitant at first, even after the crew arrived. However, Naeem and Michele were pleasant and professional, and I was very pleased with the results."
-    },
-    {
-        name: "Kristin Felgenauer",
+        name: "Tyler Nguyen",
         date: "5 months ago",
-        text: "I had a great experience with the local Michigan team. Pricing was fair, the work was excellent, and they were able to come the next day. Highly recommend A1 Concrete Coatings for tough garage cleanouts."
+        text: "We had A1 coat our aviation hangar — roughly 9,000 sq ft. The floor needed to handle aircraft, heavy carts, and spills. The result is incredible. High gloss, totally seamless, and two years on it shows no signs of wear. If you have a serious commercial job, these are your guys."
     },
     {
-        name: "Kristen Thompson",
-        date: "4 years ago",
-        text: "I can’t believe this is my garage—I can see the floor again. We moved to Florida and had no time to organize. A1 Concrete Coatings was professional and easy to work with, and they completely transformed the space."
+        name: "Sandra Kowalski",
+        date: "2 months ago",
+        text: "Property manager here. I hired A1 to coat the parking structure floors for one of our commercial buildings. They came with the right equipment, handled the prep properly, and gave us an anti-slip industrial finish that exceeds our insurance requirements. Will be using them for all future properties."
     },
     {
-        name: "Adriana Simon",
-        date: "2 years ago",
-        text: "I’ve used A1 Concrete Coatings to clean my garage and it was excellent. They removed everything, cleaned inside, and put everything back in order. The best service."
+        name: "Brian Okafor",
+        date: "6 months ago",
+        text: "A1 coated our machine shop floor — 4,500 sq ft of heavy-impact rated polyurea. The team was knowledgeable, the prep was thorough, and the finish is holding up under serious industrial use. We had quotes from three companies and A1 was clearly the most experienced. Great choice."
     },
     {
-        name: "Janet Rodriguez",
-        date: "11 months ago",
-        text: "Andrew is great. He accurately estimated the time needed and completed the garage organization efficiently based on our layout. Very satisfied."
+        name: "Christine Daly",
+        date: "3 months ago",
+        text: "We operate a large veterinary clinic and needed flooring that was antimicrobial, easy to clean, and professional-looking. A1 delivered exactly that. The crew was respectful of our animals and completed the work in phases so we stayed operational. The floor looks outstanding and hygiene compliance has never been easier."
     },
     {
-        name: "Frank Brady",
-        date: "2 years ago",
-        text: "We initially had a scheduling issue, which made me hesitant. Once resolved, the team exceeded expectations. They were punctual and did exceptional work. My garage is now clean and spacious enough for two cars."
+        name: "Josh Feldman",
+        date: "1 month ago",
+        text: "Had A1 coat the showroom floor at our collision center — about 6,000 sq ft. They matched our brand colors with a custom flake blend and the result is showroom-quality. Our customers comment on it constantly. The job was done right the first time, on time, and on budget. Very impressed."
     },
     {
-        name: "Lisa Miller",
-        date: "4 years ago",
-        text: "We had a silver cleaning service with a floor power wash. The team arrived on time and did a great job. The garage is clean, fresh, and more organized than before. We would definitely use A1 Concrete Coatings again."
+        name: "Paula Hernandez",
+        date: "7 months ago",
+        text: "Our cold storage facility needed moisture-resistant coatings that could handle constant freeze-thaw cycling. A1 specified the right system, prepped properly, and the coating has been performing flawlessly for months now. They understood the technical requirements of our environment and delivered. Excellent work."
     },
     {
-        name: "J Jolly",
-        date: "4 years ago",
-        text: "So worth it. Andrew communicated well and helped schedule around my availability. Jeffery arrived on time and worked extremely hard for over three hours in intense heat. Very happy with the result."
+        name: "Kevin Marsh",
+        date: "2 months ago",
+        text: "We run a large commercial laundry facility. The floor was deteriorating from years of moisture and chemical exposure. A1 came in, ground the whole surface down, applied a moisture-mitigation primer, and topped it with a chemical-resistant polyaspartic. It's been holding up perfectly. These guys know industrial flooring."
     },
     {
-        name: "Jhanina Santiago",
-        date: "3 years ago",
-        text: "Nahim and Michele did an excellent job cleaning and organizing my overwhelming garage. They arrived early, were professional, and followed my instructions. The Diamond package with the wash was worth every penny. The service was reasonably priced and exceeded expectations."
+        name: "Rachel Thompson",
+        date: "4 months ago",
+        text: "Brought A1 in to coat three of our warehouse bays in Kalamazoo. The crew was punctual, professional, and extremely thorough with the diamond grinding. The floor was ready for forklift traffic in under 24 hours. We've since referred them to two other businesses in our park."
     },
     {
-        name: "Tona Coley",
-        date: "4 years ago",
-        text: "Andrew and his team transformed my hazardous and depressing garage into a clean and organized space in just a few hours. I can now park my car inside. My neighbor even said he had “garage envy.” Highly recommend A1 Concrete Coatings."
+        name: "Mike Donovan",
+        date: "5 months ago",
+        text: "A1 Concrete Coatings recoated our fire station apparatus bay — 7,200 sq ft. They matched our scheduling perfectly, working overnight to avoid any disruption to emergency operations. The finish is absolutely bulletproof. It handles the weight of apparatus, water spills, and daily cleanings without any issues."
     },
     {
-        name: "Christopher Meekins",
-        date: "2 years ago",
-        text: "We want to thank Naeem and Michelle for the excellent job cleaning and organizing our garage. They worked nonstop and went above and beyond. Very professional and highly recommended."
+        name: "Ann Patel",
+        date: "3 months ago",
+        text: "We used A1 for a retail distribution facility upgrade. They coated 12,000 sq ft over a long weekend. Communication was excellent throughout — we always knew what stage they were at. The floor came out exceptional and the team left the site cleaner than they found it. Can't ask for more."
     },
     {
-        name: "Mario Martinez",
-        date: "Edited 2 years ago",
-        text: "A1 Concrete Coatings turned my garage into an actual garage again. The process was much quicker and easier than expected. I don’t usually write reviews, but the results exceeded my expectations."
-    },
-    {
-        name: "Ileana Carlisle",
-        date: "3 years ago",
-        text: "Excellent service—timely and thorough. The garage was left clean and organized. Andrew and the team were extremely professional and offered excellent customer service."
-    },
-    {
-        name: "Juan Toro",
-        date: "5 years ago",
-        text: "A1 Concrete Coatings did a great job as advertised. They emptied the garage, cleaned thoroughly, and put everything back neatly. Very professional, and I would use them again."
-    },
-    {
-        name: "OJ McDuffie",
-        date: "3 years ago",
-        text: "Andrew and his team at A1 Concrete Coatings were amazing. My garage hasn’t looked this good in 25 years. Zero complaints and outstanding work."
-    },
-    {
-        name: "Julia Greenberg",
-        date: "2 years ago",
-        text: "Had an excellent experience with Naeem and his partner. Punctual, organized, hardworking, and pleasant. They worked in extreme heat and cleaned everything to perfection."
-    },
-    {
-        name: "Kristy Figueras",
-        date: "4 years ago",
-        text: "After an injury prevented me from cleaning, A1 Concrete Coatings came through. Andrew and Penny were friendly, professional, and patient. My garage is now organized and stress-free."
-    },
-    {
-        name: "Kyle Saniga",
-        date: "2 years ago",
-        text: "Andrew and crew arrived on time and worked with me to sort unwanted items. They gave me clarity and organization in under two hours. Great service."
-    },
-    {
-        name: "Lucas Hampel",
-        date: "3 years ago",
-        text: "The company initially had to reschedule, which I understand. When they arrived, they did a fabulous job. My garage went from unusable to fully functional."
-    },
-    {
-        name: "Sharon Cahoon",
-        date: "2 years ago",
-        text: "Fantastic, prompt, courteous, and professional service. A1 Concrete Coatings transformed my garage quickly for a house showing with little notice."
-    },
-    {
-        name: "Theresa Howard",
-        date: "5 years ago",
-        text: "My garage was full of clutter. A1 Concrete Coatings removed items, cleaned, and helped me purge unwanted belongings. I felt comfortable trusting them with sentimental items."
-    },
-    {
-        name: "David Wright",
-        date: "2 years ago",
-        text: "The workers were very professional and did a great job. I can finally use my garage again. Would absolutely recommend A1 Concrete Coatings."
+        name: "Greg Sommer",
+        date: "1 month ago",
+        text: "A1 coated our entire brewery floor — fermentation room, packaging area, and loading dock. They understood the USDA-compliant requirements and specified the right system. The floor drains properly, cleans up instantly, and has held up to constant forklift and pallet jack traffic. Outstanding results."
     }
 ];
 
