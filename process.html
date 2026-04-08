@@ -4,126 +4,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Process | A1 Concrete Coatings</title>
+    <title>Our Installation Process | A1 Concrete Coatings</title>
     <meta name="description"
-        content="Understand our 6-step concrete coating process. From diamond grinding to polyaspartic topcoats, see how we guarantee a durable floor.">
+        content="A1 Concrete Coatings uses a rigorous 6-phase industrial installation process — from diamond grinding to polyaspartic topcoat. Built for commercial and industrial facilities in West Michigan.">
     <meta name="keywords"
-        content="commercial concrete coating process, industrial floor coating installation, polyurea application steps, diamond grinding commercial floor, polyaspartic topcoat Michigan">
+        content="commercial concrete coating process, industrial floor coating installation, polyurea application, diamond grinding commercial floor, polyaspartic topcoat Michigan, Grand Rapids floor coating">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.a1concretecoatings.com/process.html">
-    <meta property="og:title" content="Our Application Process | A1 Concrete Coatings">
-    <meta property="og:description"
-        content="We don't cut corners. See our industrial-grade installation process step-by-step.">
-    <meta property="og:image"
-        content="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp">
+    <meta property="og:title" content="Our Installation Process | A1 Concrete Coatings">
+    <meta property="og:description" content="We don't skip steps. Our 6-phase industrial process guarantees a floor that performs as hard as your operation.">
+    <meta property="og:image" content="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp">
 
-    <!-- styles -->
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="chat-widget.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
 
     <!-- Favicons -->
-    <link rel="icon" type="image/webp" sizes="16x16"
-        href="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp">
-    <link rel="icon" type="image/webp" sizes="32x32"
-        href="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp">
-    <link rel="icon" type="image/webp" sizes="192x192"
-        href="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp">
-    <link rel="icon" type="image/webp" sizes="512x512"
-        href="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp">
-    <link rel="apple-touch-icon" sizes="180x180"
-        href="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp">
+    <link rel="icon" type="image/webp" href="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp">
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp">
 
     <style>
+        /* ─── HERO ─────────────────────────────────────── */
         .process-hero {
-            background-color: var(--color-navy);
+            background: linear-gradient(135deg, #050c18 0%, #0c1e36 60%, #0d2244 100%);
             color: white;
-            padding: 6rem 0;
+            padding: 7rem 0 5rem;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
 
+        .process-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 50%, rgba(30,111,191,0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 30%, rgba(30,111,191,0.1) 0%, transparent 50%);
+        }
+
+        .process-hero .container { position: relative; z-index: 2; }
+
+        .process-hero .hero-badge {
+            display: inline-block;
+            background: #1E6FBF;
+            color: #fff;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            padding: 0.4rem 1.2rem;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+        }
+
         .process-hero h1 {
             color: white;
-            margin-bottom: 1.5rem;
-            font-size: 3rem;
+            font-size: clamp(2rem, 5vw, 3.25rem);
+            font-weight: 800;
+            margin-bottom: 1.25rem;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
         }
 
         .process-hero p {
-            color: white;
-            max-width: 600px;
-            margin: 0 auto;
+            color: #94a3b8;
+            max-width: 580px;
+            margin: 0 auto 2.5rem;
             font-size: 1.1rem;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
-        .section-badge-hero {
-            color: var(--color-volt);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
-
-        .process-hero::after {
-            content: '';
-            position: absolute;
-            bottom: -50px;
-            left: 0;
-            width: 100%;
-            height: 100px;
-            background: white;
-            transform: skewY(-2deg);
-        }
-
-        .step-section {
-            padding: 4rem 0;
-            background: #fff;
+        /* ─── STEPS SECTION ─────────────────────────────── */
+        .steps-section {
+            background: #080f1a;
+            padding: 5rem 0;
         }
 
         .step-row {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr;
             gap: 3rem;
             padding: 4rem 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            align-items: center;
         }
 
-        .step-row:last-child {
-            border-bottom: none;
-        }
+        .step-row:last-child { border-bottom: none; }
 
         @media (min-width: 900px) {
             .step-row {
-                flex-direction: row;
-                align-items: center;
+                grid-template-columns: 1fr 1fr;
                 gap: 5rem;
             }
-
-            .step-row:nth-child(even) {
-                flex-direction: row-reverse;
-            }
+            .step-row:nth-child(even) .step-image { order: -1; }
         }
 
-        .step-content {
-            flex: 1;
-            padding: 1rem;
+        /* Content */
+        .step-content { padding: 1rem 0; }
+
+        .step-phase {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #1E6FBF;
+            margin-bottom: 1rem;
         }
 
+        .step-phase::before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #1E6FBF;
+        }
+
+        .step-content h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            color: #f1f5f9;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .step-content p {
+            font-size: 1.05rem;
+            line-height: 1.75;
+            color: #94a3b8;
+            margin-bottom: 1.25rem;
+        }
+
+        .step-detail {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .step-tag {
+            background: rgba(30,111,191,0.12);
+            border: 1px solid rgba(30,111,191,0.25);
+            color: #93c5e8;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.3rem 0.75rem;
+            border-radius: 20px;
+        }
+
+        /* Image */
         .step-image {
-            flex: 1;
-            border-radius: 12px;
+            border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             position: relative;
-            height: 350px;
+            aspect-ratio: 4/3;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.06);
         }
 
         .step-image img {
@@ -131,149 +177,64 @@
             height: 100%;
             object-fit: cover;
             display: block;
-            transition: transform 0.5s ease;
+            transition: transform 0.6s ease;
         }
 
-        .step-image:hover img {
-            transform: scale(1.05);
-        }
+        .step-image:hover img { transform: scale(1.04); }
 
-        .step-badge {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--color-volt);
-            color: var(--color-navy);
+        .step-number-overlay {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(8,15,26,0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(30,111,191,0.4);
+            color: #93c5e8;
+            font-size: 0.75rem;
             font-weight: 800;
-            font-size: 0.9rem;
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            margin-bottom: 1.5rem;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 10px rgba(199, 169, 75, 0.3);
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
         }
 
-        .step-content h3 {
+        /* ─── WHY IT MATTERS BAR ────────────────────────── */
+        .why-bar {
+            background: #1E6FBF;
+            padding: 2.5rem 0;
+        }
+
+        .why-bar-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .why-bar-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        .why-stat strong {
+            display: block;
             font-size: 2rem;
-            color: var(--color-navy);
-            margin-bottom: 1rem;
-            font-weight: 700;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1;
+            margin-bottom: 0.4rem;
         }
 
-        .step-content p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: #4a5568;
+        .why-stat span {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.75);
+            font-weight: 500;
         }
 
-        /* Mobile Optimization - Card Design */
+        /* ─── MOBILE ─────────────────────────────────────── */
         @media (max-width: 768px) {
-
-            /* Add a subtle background to the section so white cards pop */
-            .step-section {
-                background-color: #f1f5f9;
-                /* Slate-100 equivalent */
-                padding: 3rem 1rem;
-            }
-
-            .process-hero {
-                padding: 4rem 1.5rem 6rem 1.5rem;
-                clip-path: ellipse(150% 100% at 50% 0%);
-                /* Modern curve at bottom */
-            }
-
-            .process-hero::after {
-                display: none;
-                /* Remove the desktop skew effect */
-            }
-
-            .process-hero h1 {
-                font-size: 2.25rem !important;
-                margin-bottom: 1rem;
-            }
-
-            .process-hero p:last-of-type {
-                font-size: 1.1rem !important;
-                padding: 0 1rem;
-            }
-
-            /* Container for cards */
-            .step-row {
-                background: white;
-                border-radius: 20px;
-                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-                padding: 0;
-                margin-bottom: 2.5rem;
-                flex-direction: column-reverse;
-                /* Image on top */
-                overflow: hidden;
-                /* For image corners */
-                border: 1px solid rgba(0, 0, 0, 0.03);
-                gap: 0;
-                /* Remove gap, handle via padding */
-            }
-
-            /* Card Image at Top */
-            .step-image {
-                width: 100%;
-                height: 220px;
-                border-radius: 0;
-                box-shadow: none;
-                flex: none;
-                /* Don't grow/shrink */
-                position: relative;
-            }
-
-            .step-image img {
-                border-radius: 0;
-                /* Override default rounded corners if any */
-            }
-
-            /* Card Content Body */
-            .step-content {
-                padding: 2rem 1.5rem;
-                text-align: left;
-                position: relative;
-            }
-
-            /* Badge Styling - Inline Pill */
-            .step-badge {
-                font-size: 0.75rem;
-                padding: 0.35rem 0.85rem;
-                margin-bottom: 1rem;
-                background: var(--color-navy);
-                /* Darker contrast on white */
-                color: white;
-                box-shadow: none;
-            }
-
-            .step-content h3 {
-                font-size: 1.6rem;
-                margin-bottom: 0.75rem;
-                line-height: 1.3;
-            }
-
-            .step-content p {
-                font-size: 1rem;
-                color: #64748b;
-                /* Slate-500 */
-                line-height: 1.6;
-                margin-bottom: 0;
-                text-align: left;
-            }
-
-            /* Visual connector (optional element to hint flow) */
-            .step-row:not(:last-child)::after {
-                content: '↓';
-                position: absolute;
-                bottom: -35px;
-                left: 50%;
-                transform: translateX(-50%);
-                font-size: 1.5rem;
-                color: #cbd5e1;
-                font-weight: bold;
-            }
+            .steps-section { padding: 3rem 0; }
+            .step-row { padding: 2.5rem 0; gap: 2rem; }
+            .step-content h3 { font-size: 1.5rem; }
         }
     </style>
 </head>
@@ -282,7 +243,6 @@
 
     <!-- Header -->
     <header>
-        <!-- Top Bar -->
         <div class="top-bar">
             <div class="container">
                 <div class="top-bar-info">
@@ -290,16 +250,13 @@
                     <span>🕒 Mon-Sat: 7am - 6pm</span>
                     <span>📧 info@a1concretecoatings.com</span>
                 </div>
-                <div class="top-bar-socials">
-                </div>
             </div>
         </div>
-
-        <!-- Main Nav -->
         <div class="main-header">
             <div class="container">
                 <a href="index.html" class="logo">
-                    <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp" alt="A1 Concrete Coatings Logo" style="height:52px;width:auto;">
+                    <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp"
+                        alt="A1 Concrete Coatings Logo" style="height:52px;width:auto;">
                 </a>
                 <button class="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
                 <nav>
@@ -326,114 +283,191 @@
 
     <!-- Hero -->
     <section class="process-hero">
-        <div class="container" style="position: relative; z-index: 2;">
-            <p class="section-badge-hero">The A1 Standard</p>
-            <h1>Our 6-Step Installation Process</h1>
+        <div class="container">
+            <span class="hero-badge">The A1 Standard</span>
+            <h1>Our 6-Phase Installation Process</h1>
             <p>
-                We don't skip steps. From heavy-duty grinding to our final protective topcoat, our rigorous process
-                ensures a bond that lasts a lifetime.
+                We don't skip steps. Every commercial and industrial floor we install follows this
+                exact process — because a shortcut on prep means a floor that fails under load.
             </p>
+            <a href="contact.html" class="btn btn-cta">Request A Site Assessment</a>
         </div>
     </section>
 
+    <!-- Why It Matters Stats -->
+    <div class="why-bar">
+        <div class="container">
+            <div class="why-bar-grid">
+                <div class="why-stat">
+                    <strong>4×</strong>
+                    <span>Stronger than standard epoxy</span>
+                </div>
+                <div class="why-stat">
+                    <strong>500+</strong>
+                    <span>Commercial facilities coated</span>
+                </div>
+                <div class="why-stat">
+                    <strong>15-yr</strong>
+                    <span>System performance warranty</span>
+                </div>
+                <div class="why-stat">
+                    <strong>100%</strong>
+                    <span>Mechanical surface prep — always</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Process Steps -->
-    <section class="step-section">
+    <section class="steps-section">
         <div class="container">
 
-            <!-- Step 1 -->
+            <!-- Phase 01 -->
             <div class="step-row">
                 <div class="step-content">
-                    <span class="step-badge">Phase 01</span>
-                    <h3>Diamond Grinding</h3>
-                    <p>Prep is everything. We use industrial planetary grinders with diamond tooling to mechanically
-                        abrade the concrete surface. This opens the pores, removes weak top layers ("laitance"), and
-                        ensures the
-                        coating creates an unbreakable mechanical bond. We also attach industrial HEPA vacuums to keep
-                        dust to a minimum.</p>
+                    <span class="step-phase">Phase 01</span>
+                    <h3>Diamond Grinding & Surface Prep</h3>
+                    <p>
+                        Prep is the entire job. We run industrial planetary diamond grinders across your concrete
+                        to mechanically abrade the surface, open the pores, and remove laitance — the weak
+                        top layer that causes coatings to peel. No acid etching, no shortcuts.
+                        Industrial HEPA vacuums run simultaneously to keep your facility dust-free.
+                    </p>
+                    <div class="step-detail">
+                        <span class="step-tag">Diamond Tooling</span>
+                        <span class="step-tag">HEPA Dust Control</span>
+                        <span class="step-tag">CSP 2–3 Profile</span>
+                    </div>
                 </div>
                 <div class="step-image">
-                    <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1768421556/omega-concrete-coatings-gallery-garages-17-1920w.jpg_y1wsyf.jpg"
-                        alt="Diamond Grinding Concrete Prep">
+                    <span class="step-number-overlay">Phase 01</span>
+                    <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1775653421/IMG_5229-scaled_nwfxtc.jpg"
+                        alt="Diamond grinding commercial concrete floor" loading="lazy">
                 </div>
             </div>
 
-            <!-- Step 2 -->
+            <!-- Phase 02 -->
             <div class="step-row">
                 <div class="step-content">
-                    <span class="step-badge">Phase 02</span>
-                    <h3>Crack & Pit Repair</h3>
-                    <p>We never coat over problems. We "chase" cracks and fill them with a specialized rapid-cure mender
-                        that cures
-                        stronger than the concrete itself. Pits and spalling are smoothed out to create a seamless,
-                        perfect
-                        canvas for your new floor.</p>
+                    <span class="step-phase">Phase 02</span>
+                    <h3>Crack & Spall Repair</h3>
+                    <p>
+                        We never coat over damage. Every crack is chased and routed, then filled with
+                        a rapid-cure polyurea crack filler that cures harder than the concrete itself.
+                        Spalling, pitting, and surface defects are repaired with a cementitious patching
+                        compound — creating a seamless, structurally sound canvas before any coating touches the floor.
+                    </p>
+                    <div class="step-detail">
+                        <span class="step-tag">Crack Routing</span>
+                        <span class="step-tag">Polyurea Filler</span>
+                        <span class="step-tag">Spall Repair</span>
+                    </div>
                 </div>
                 <div class="step-image">
+                    <span class="step-number-overlay">Phase 02</span>
                     <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1768421532/Lakeshore-1.jpg_izwquk.jpg"
-                        alt="Repairing Concrete Surface">
+                        alt="Concrete crack and spall repair" loading="lazy">
                 </div>
             </div>
 
-            <!-- Step 3 -->
+            <!-- Phase 03 -->
             <div class="step-row">
                 <div class="step-content">
-                    <span class="step-badge">Phase 03</span>
-                    <h3>Base Coat Application</h3>
-                    <p>We apply a 100% solids specialized Polyurea base coat. Unlike DIY epoxy, this wicks deep into the
-                        open
-                        concrete pores, creating a foundational grip that resists peeling and hot tire pickup.</p>
+                    <span class="step-phase">Phase 03</span>
+                    <h3>Polyurea Base Coat Application</h3>
+                    <p>
+                        We apply a 100% solids Polyurea base coat — not epoxy. Polyurea is 4× stronger,
+                        cures in hours (not days), and bonds at a molecular level with the open concrete pores.
+                        This foundational layer is what gives the system its forklift-rated load capacity
+                        and resistance to delamination under thermal stress and heavy impact.
+                    </p>
+                    <div class="step-detail">
+                        <span class="step-tag">100% Solids Polyurea</span>
+                        <span class="step-tag">Forklift-Rated</span>
+                        <span class="step-tag">Thermal Stable</span>
+                    </div>
                 </div>
                 <div class="step-image">
-                    <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1768421530/Large-Garage_Denim2.jpg_wm4kpi.jpg"
-                        alt="Applying Base Coat">
+                    <span class="step-number-overlay">Phase 03</span>
+                    <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1775653420/67cae298119a6b6deba03da2_Warehouse_Epoxy_Concrete_Coating_Los_Angeles_fzkqdz.jpg"
+                        alt="Polyurea base coat application in warehouse" loading="lazy">
                 </div>
             </div>
 
-            <!-- Step 4 -->
+            <!-- Phase 04 -->
             <div class="step-row">
                 <div class="step-content">
-                    <span class="step-badge">Phase 04</span>
-                    <h3>Flake Broadcast</h3>
-                    <p>Immediately after the base coat, we broadcast vinyl chips (flakes) into the wet coating until
-                        "refusal"—meaning
-                        the floor is 100% covered. This provides the decorative look, texture, and added
-                        durability/thickness to the system.</p>
+                    <span class="step-phase">Phase 04</span>
+                    <h3>Full-Broadcast Flake System</h3>
+                    <p>
+                        Immediately after the base coat, we broadcast vinyl flake chips into the wet
+                        coating to full refusal — meaning 100% surface coverage with no gaps.
+                        This adds texture, visual depth, and significant additional thickness to the
+                        system. For industrial applications, we can adjust chip size and density
+                        to achieve specific anti-slip ratings or chemical resistance profiles.
+                    </p>
+                    <div class="step-detail">
+                        <span class="step-tag">100% Coverage</span>
+                        <span class="step-tag">Anti-Slip Texture</span>
+                        <span class="step-tag">Custom Blends</span>
+                    </div>
                 </div>
                 <div class="step-image">
+                    <span class="step-number-overlay">Phase 04</span>
                     <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1768421531/Garage-Floor-BG.jpg_la8qcg.jpg"
-                        alt="Full Flake Broadcast">
+                        alt="Full broadcast flake coating system" loading="lazy">
                 </div>
             </div>
 
-            <!-- Step 5 -->
+            <!-- Phase 05 -->
             <div class="step-row">
                 <div class="step-content">
-                    <span class="step-badge">Phase 05</span>
-                    <h3>Scrape & Vacuum</h3>
-                    <p>Once the base coat cures (which is fast!), we scrape the floor with a flat blade to remove any
-                        sharp, vertical-standing flakes.
-                        We then vacuum up the excess loose flakes. This step is crucial for ensuring the floor is
-                        comfortable to walk on while maintaining slip resistance.</p>
+                    <span class="step-phase">Phase 05</span>
+                    <h3>Scarification & Surface Prep for Topcoat</h3>
+                    <p>
+                        Once the base cures, we scrape the floor with a flat blade to knock down any
+                        sharp, vertically standing flakes. We then vacuum thoroughly to remove all loose
+                        material. This step is critical — it ensures the topcoat bonds evenly across the
+                        entire surface and prevents any texture irregularities that would compromise
+                        the final finish or collect contaminants.
+                    </p>
+                    <div class="step-detail">
+                        <span class="step-tag">Surface Scarification</span>
+                        <span class="step-tag">Industrial Vacuum</span>
+                        <span class="step-tag">Bond Prep</span>
+                    </div>
                 </div>
                 <div class="step-image">
-                    <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1768421555/omega-concrete-coatings-gallery-garages-53-1920w.jpg_ywpz7c.jpg"
-                        alt="Scraping and Vacuuming Floor">
+                    <span class="step-number-overlay">Phase 05</span>
+                    <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1775653421/V8-Factory-Flooring-Light-Gray-Coating_jytlnq.jpg"
+                        alt="Floor surface preparation before topcoat" loading="lazy">
                 </div>
             </div>
 
-            <!-- Step 6 -->
+            <!-- Phase 06 -->
             <div class="step-row">
                 <div class="step-content">
-                    <span class="step-badge">Phase 06</span>
-                    <h3>Polyaspartic Topcoat</h3>
-                    <p>The shield. We apply a clear, UV-stable Polyaspartic topcoat. This layer protects against
-                        chemicals, oil spills,
-                        abrasion, and road salts. It also amplifies the colors of the flakes and provides a
-                        showroom-finish sheen that won't yellow over time.</p>
+                    <span class="step-phase">Phase 06</span>
+                    <h3>Polyaspartic Topcoat — The Shield</h3>
+                    <p>
+                        The final layer is a UV-stable, clear Polyaspartic topcoat — the most durable
+                        protective coating available for commercial concrete. It resists chemicals,
+                        oil, battery acid, cleaning agents, and heavy abrasion. It won't yellow under
+                        UV exposure, handles extreme temperature fluctuations, and delivers a
+                        high-gloss or matte finish depending on your operational requirements.
+                        Your floor is ready for traffic within hours.
+                    </p>
+                    <div class="step-detail">
+                        <span class="step-tag">UV-Stable Polyaspartic</span>
+                        <span class="step-tag">Chemical Resistant</span>
+                        <span class="step-tag">Ready in Hours</span>
+                        <span class="step-tag">Gloss or Matte</span>
+                    </div>
                 </div>
                 <div class="step-image">
-                    <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1768421529/Atlas-Hangar1.jpg_mjbjib.jpg"
-                        alt="Polyaspartic Topcoat Application">
+                    <span class="step-number-overlay">Phase 06</span>
+                    <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1775653421/a-new-polished-commercial-floor-e1761837215262_q2dwey.webp"
+                        alt="Finished polyaspartic topcoat commercial floor" loading="lazy">
                 </div>
             </div>
 
@@ -443,9 +477,9 @@
     <!-- CTA -->
     <section class="cta-banner">
         <div class="container">
-            <h2>Ready to transform your floor?</h2>
-            <p>Get a free site consultation and see what A1 Concrete Coatings can do for your facility.</p>
-            <a href="contact.html" class="btn btn-cta">Get A Free Quote</a>
+            <h2>Ready to See This Process at Your Facility?</h2>
+            <p>We offer free on-site assessments. We'll evaluate your concrete, scope the project, and give you a clear proposal — no obligation.</p>
+            <a href="contact.html" class="btn btn-cta">Request A Free Site Assessment</a>
         </div>
     </section>
 
@@ -453,36 +487,27 @@
     <footer>
         <div class="container">
             <div class="footer-grid">
-                <!-- Company Info -->
                 <div>
                     <a href="index.html" class="logo" style="margin-bottom: 1rem;">
-                        <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp" alt="A1 Concrete Coatings Logo" style="height:52px;width:auto;">
+                        <img src="https://res.cloudinary.com/diptffkzh/image/upload/v1775643894/A1-Concrete-Logo_vbgeql.webp"
+                            alt="A1 Concrete Coatings Logo" style="height:52px;width:auto;">
                     </a>
-                    <p style="margin-bottom: 1rem;">Transforming your concrete surfaces with industry-leading materials
-                        and
-                        craftsmanship. Serving West Michigan since 2019.</p>
+                    <p style="margin-bottom: 1rem;">Commercial and industrial concrete coatings built to perform. Based in Grand Rapids, MI, serving facilities across West Michigan and beyond.</p>
                     <div class="footer-socials" style="display: flex; gap: 1rem; margin-top: 1rem;">
-
                         <a href="#" style="color: white; text-decoration: none;" aria-label="Instagram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                             </svg>
                         </a>
                         <a href="#" style="color: white; text-decoration: none;" aria-label="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                             </svg>
                         </a>
                     </div>
                 </div>
-
-                <!-- Quick Links -->
                 <div>
                     <h4>Quick Links</h4>
                     <ul style="list-style: none;">
@@ -494,21 +519,18 @@
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-
-                <!-- Contact -->
                 <div class="footer-contact">
                     <h4>Contact Us</h4>
-                    <p>📍 Grand Rapids, MI</p>
+                    <p>📍 Grand Rapids, MI 49546</p>
                     <p>📞 888.705.1146</p>
                     <p>📧 info@a1concretecoatings.com</p>
                     <p>🕒 Mon-Sat: 7am - 6pm</p>
                 </div>
             </div>
-
             <div class="copyright">
                 <div>&copy; 2026 A1 Concrete Coatings. All rights reserved.</div>
                 <div class="legal-links">
-                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="terms.html">Terms &amp; Conditions</a>
                     <a href="privacy.html">Privacy Policy</a>
                     <a href="refund.html">Refund Policy</a>
                 </div>
@@ -516,8 +538,9 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
-    <script src="chat-widget.js"></script>
+    <script src="main.js" defer></script>
+    <script src="chat-knowledge.js" defer></script>
+    <script src="chat-widget.js" defer></script>
 </body>
 
 </html>
