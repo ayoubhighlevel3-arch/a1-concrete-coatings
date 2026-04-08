@@ -71,17 +71,16 @@
   <link rel="stylesheet" href="modern-sections.css?v=1.0">
   <link rel="stylesheet" href="chat-widget.css">
 
-  <!-- Leaflet.js for Maps -->
+  <!-- Leaflet.js for Maps - loaded async -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" media="print" onload="this.media='all'">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 
   <!-- Favicons -->
   <link rel="icon" type="image/webp" sizes="16x16"
@@ -150,13 +149,11 @@
   <!-- Hero Section -->
   <!-- Hero Section -->
   <section id="hero" class="hero-section">
-
     <div class="hero-video-wrapper">
-      <video autoplay muted loop playsinline
+      <video autoplay muted loop playsinline preload="none"
         poster="https://res.cloudinary.com/diptffkzh/image/upload/v1768422690/Trucks_tw7fqt.png" id="heroVideo">
-        <source src="https://res.cloudinary.com/diptffkzh/video/upload/v1768420768/Hero_video_ljpjjd.mp4"
+        <source src="https://res.cloudinary.com/diptffkzh/video/upload/q_auto,f_auto/v1768420768/Hero_video_ljpjjd.mp4"
           type="video/mp4">
-        Your browser does not support the video tag.
       </video>
     </div>
 
@@ -628,14 +625,17 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
-  <script src="reviews.js"></script>
+  <script src="main.js" defer></script>
+  <script src="reviews.js" defer></script>
   <!-- Chat Knowledge Base -->
-  <script src="chat-knowledge.js"></script>
+  <script src="chat-knowledge.js" defer></script>
   <!-- Chat Widget Script -->
-  <script src="chat-widget.js"></script>
+  <script src="chat-widget.js" defer></script>
+  <!-- Leaflet.js - loaded at bottom to avoid blocking render -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <!-- Service Area Map -->
-  <script src="service-area-map.js"></script>
+  <script src="service-area-map.js" defer></script>
 </body>
 
 </html>

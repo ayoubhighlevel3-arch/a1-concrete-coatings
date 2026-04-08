@@ -196,27 +196,31 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileCarouselNav();
     initComparisonSliders();
 
-    // Gloss Physics for Service Cards (Optimized)
+    // Gloss Physics for Service Cards (rAF-throttled)
     const cards = document.querySelectorAll('.service-card-new');
     cards.forEach(card => {
         let bounds;
+        let rafId;
 
         const rotateToMouse = (e) => {
             if (!bounds) return;
-            const x = e.clientX - bounds.left;
-            const y = e.clientY - bounds.top;
-
-            card.style.setProperty('--mouse-x', `${x}px`);
-            card.style.setProperty('--mouse-y', `${y}px`);
+            cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(() => {
+                const x = e.clientX - bounds.left;
+                const y = e.clientY - bounds.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
         };
 
         const onMouseEnter = () => {
             bounds = card.getBoundingClientRect();
-            document.addEventListener('mousemove', rotateToMouse);
+            document.addEventListener('mousemove', rotateToMouse, { passive: true });
         };
 
         const onMouseLeave = () => {
             document.removeEventListener('mousemove', rotateToMouse);
+            cancelAnimationFrame(rafId);
             card.style.removeProperty('--mouse-x');
             card.style.removeProperty('--mouse-y');
         };
