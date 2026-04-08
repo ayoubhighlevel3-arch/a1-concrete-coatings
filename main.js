@@ -1,7 +1,7 @@
 // Main JavaScript file
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Blackops Coating Loaded');
+    console.log('A1 Concrete Coatings Loaded');
 
     // Mobile Menu Toggle
     const mobileBtn = document.querySelector('.mobile-menu-btn');

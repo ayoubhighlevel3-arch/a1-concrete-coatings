@@ -28,16 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
              <div class="icon-circle phone">📞</div>
              <div class="link-details">
                <span class="link-title">Call or Text Us</span>
-               <span class="link-sub">+1 (850) 919-5725</span>
+               <span class="link-sub">+1 888.705.1146</span>
              </div>
            </a>
 
            <!-- Email -->
-           <a href="mailto:Blackops850fl@gmail.com" class="contact-link-item">
+           <a href="mailto:info@a1concretecoatings.com" class="contact-link-item">
              <div class="icon-circle email">✉️</div>
              <div class="link-details">
                <span class="link-title">Send an Email</span>
-               <span class="link-sub">Blackops850fl@gmail.com</span>
+               <span class="link-sub">info@a1concretecoatings.com</span>
              </div>
            </a>
 

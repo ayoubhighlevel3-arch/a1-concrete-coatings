@@ -61,14 +61,14 @@ const chatKnowledgeBase = [
   // --- Service Areas ---
   {
     keywords: ['where', 'area', 'location', 'cover', 'crestview', 'niceville', 'destin', 'fort walton', 'florida', 'fl', 'northwest'],
-    answer: "We proudly serve **Northwest Florida**! \n📍 Crestview, FL \n📍 Niceville, FL \n📍 Destin, FL \n...and communities within a 50-mile radius.",
+    answer: "We proudly serve **West Michigan**! \n📍 Grand Rapids, MI \n📍 Niceville, FL \n📍 Destin, FL \n...and communities within a 100-mile radius.",
     followUp: true
   },
 
   // --- Conversational ---
   {
     keywords: ['hello', 'hi', 'hey', 'start'],
-    answer: "Hello! 👋 Welcome to Blackops Coating. How can we help transform your concrete floors today?",
+    answer: "Hello! 👋 Welcome to A1 Concrete Coatings. How can we help transform your concrete floors today?",
     followUp: false
   },
   {
@@ -78,7 +78,7 @@ const chatKnowledgeBase = [
   },
   {
     keywords: ['human', 'person', 'phone', 'call'],
-    answer: "Our team is ready to help! You can call us directly at **+1 850-919-5725**. 📞",
+    answer: "Our team is ready to help! You can call us directly at **888.705.1146**. 📞",
     followUp: true
   }
 ];

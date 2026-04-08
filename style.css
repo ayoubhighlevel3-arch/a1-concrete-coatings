@@ -1,57 +1,44 @@
 :root {
-  /* Blackops Coating Brand Palette */
-  --color-navy: #1A1A1A;
-  /* Warm Charcoal */
-  --color-blue: #23211D;
-  /* Surface (warm) */
-  --color-blue-hover: #D4AF37;
-  /* Metallic Gold on hover */
-  --color-highlight: #E7CF81;
-  /* Gold Highlight */
-  --color-light-highlight: #CFCFCD;
-  /* Silver/Chrome */
+  /* A1 Concrete Coatings Brand Palette */
+  --color-navy: #232F50;
+  /* Navy — logo trim, borders, header, footer */
+  --color-cta: #24A7E0;
+  /* Bright Blue — primary CTA, quote buttons */
+  --color-primary: #1D5A99;
+  /* Dark Blue — phone, secondary buttons, authority */
+  --color-dark: #05070D;
+  /* Near-Black — base background */
 
-  /* CTA Accent */
-  --color-volt: #D4AF37;
-  /* Metallic Gold (primary CTA) */
-  --color-volt-text: #1A1A1A;
-  /* Dark text on gold */
-  --color-gold: #E7CF81;
-  /* Gold Highlight for stars/accents */
+  /* Legacy / compat aliases */
+  --color-volt: #24A7E0;
+  /* maps old volt → new CTA blue */
+  --color-volt-text: #FFFFFF;
+  /* White text on blue buttons */
+  --color-blue: #1D5A99;
+  --color-blue-hover: #24A7E0;
+  --color-highlight: #24A7E0;
+  --color-light-highlight: #93C5E8;
 
   /* Neutrals */
   --color-text-main: #F5F5F5;
-  /* Primary Text (light on dark) */
   --color-text-muted: #BDBDBD;
-  /* Muted Text */
-  --color-border: #2A2A2A;
-  /* Border/Divider */
-  --color-bg-soft: #23211D;
-  /* Surface background */
-  --color-bg-card: #1A1A1A;
-  /* Card backgrounds */
+  --color-border: #2A3A5A;
+  --color-bg-soft: #0D1826;
+  --color-bg-card: #111827;
 
-  /* Legacy Mappings (to maintain compatibility) */
-  --color-white: #F5F5F5;
-  /* Light text/backgrounds */
+  /* Legacy Mappings */
+  --color-white: #FFFFFF;
   --color-wolf: #8E8E8E;
-  /* Steel Gray */
   --color-graphite: #F5F5F5;
-  /* Light text on dark */
-  --color-mist: #23211D;
-  /* Dark background */
+  --color-mist: #0D1826;
   --color-off-white: #F5F7FA;
-  /* Soft Background for fades */
 
   /* Utility */
   --color-success: #16A34A;
   --color-warning: #F97316;
 
   /* Typography */
-  --font-main: 'Inter',
-    system-ui,
-    -apple-system,
-    sans-serif;
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
 
   /* Spacing */
   --spacing-sm: 0.5rem;
@@ -73,7 +60,7 @@ html {
 
 body {
   font-family: var(--font-main);
-  background-color: #1A1A1A;
+  background-color: #05070D;
   /* Using footer color - good color */
   color: var(--color-graphite);
   line-height: 1.6;
@@ -227,7 +214,7 @@ section {
 
 /* Header */
 header {
-  background-color: #1A1A1A;
+  background-color: #05070D;
   /* Using footer color - good color */
   position: sticky;
   top: 0;
@@ -235,7 +222,7 @@ header {
 }
 
 .top-bar {
-  background-color: #1A1A1A;
+  background-color: #05070D;
   /* Warm Charcoal */
   color: #BDBDBD;
   /* Muted text */
@@ -386,13 +373,13 @@ nav .btn-cta {
 
 /* Footer */
 footer {
-  background-color: #1A1A1A;
+  background-color: #05070D;
   /* Warm Charcoal */
   color: #BDBDBD;
   /* Muted text */
   padding: var(--spacing-xl) 0;
   margin-top: auto;
-  border-top: 4px solid var(--color-volt);
+  border-top: 4px solid var(--color-cta);
   /* Gold accent border */
 }
 
@@ -645,7 +632,7 @@ footer a:hover {
     right: 0;
     bottom: 0;
     /* Full height */
-    background: #1A1A1A;
+    background: #05070D;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0;
     z-index: 9998;

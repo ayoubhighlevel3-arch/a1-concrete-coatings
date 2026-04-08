@@ -2,12 +2,12 @@ const reviewsData = [
     {
         name: "Shawn Patterson",
         date: "2 months ago",
-        text: "I hired Blackops Coating to clean and organize my garage. I had a great experience from beginning to end. Andrew completely educated me about the process and provided timely updates throughout. The two-person team arrived on time, were very professional, and thoroughly cleaned and organized my entire garage. They set aside items I no longer wanted and organized everything else in a way I never would have thought of. Everything was neat and clean, including the garage shelves. This was money well spent, and I wouldn’t hesitate to hire Blackops Coating again."
+        text: "I hired A1 Concrete Coatings to clean and organize my garage. I had a great experience from beginning to end. Andrew completely educated me about the process and provided timely updates throughout. The two-person team arrived on time, were very professional, and thoroughly cleaned and organized my entire garage. They set aside items I no longer wanted and organized everything else in a way I never would have thought of. Everything was neat and clean, including the garage shelves. This was money well spent, and I wouldn’t hesitate to hire A1 Concrete Coatings again."
     },
     {
         name: "Brittany Jenkins",
         date: "3 years ago",
-        text: "I would like to say thank you to Blackops Coating for their outstanding work. I was initially reluctant due to Yelp reviews. I spoke with Andrew, who allowed me to pay COD and assured me the company was professional. The crew arrived on time, were courteous, professional, and completed the job efficiently. My husband was impressed and couldn’t believe how clean the garage was. I’m very glad we chose Blackops Coating."
+        text: "I would like to say thank you to A1 Concrete Coatings for their outstanding work. I was initially reluctant due to Yelp reviews. I spoke with Andrew, who allowed me to pay COD and assured me the company was professional. The crew arrived on time, were courteous, professional, and completed the job efficiently. My husband was impressed and couldn’t believe how clean the garage was. I’m very glad we chose A1 Concrete Coatings."
     },
     {
         name: "Michele Harris",
@@ -17,17 +17,17 @@ const reviewsData = [
     {
         name: "Kristin Felgenauer",
         date: "5 months ago",
-        text: "I had a great experience with the local Michigan team. Pricing was fair, the work was excellent, and they were able to come the next day. Highly recommend Blackops Coating for tough garage cleanouts."
+        text: "I had a great experience with the local Michigan team. Pricing was fair, the work was excellent, and they were able to come the next day. Highly recommend A1 Concrete Coatings for tough garage cleanouts."
     },
     {
         name: "Kristen Thompson",
         date: "4 years ago",
-        text: "I can’t believe this is my garage—I can see the floor again. We moved to Florida and had no time to organize. Blackops Coating was professional and easy to work with, and they completely transformed the space."
+        text: "I can’t believe this is my garage—I can see the floor again. We moved to Florida and had no time to organize. A1 Concrete Coatings was professional and easy to work with, and they completely transformed the space."
     },
     {
         name: "Adriana Simon",
         date: "2 years ago",
-        text: "I’ve used Blackops Coating to clean my garage and it was excellent. They removed everything, cleaned inside, and put everything back in order. The best service."
+        text: "I’ve used A1 Concrete Coatings to clean my garage and it was excellent. They removed everything, cleaned inside, and put everything back in order. The best service."
     },
     {
         name: "Janet Rodriguez",
@@ -42,7 +42,7 @@ const reviewsData = [
     {
         name: "Lisa Miller",
         date: "4 years ago",
-        text: "We had a silver cleaning service with a floor power wash. The team arrived on time and did a great job. The garage is clean, fresh, and more organized than before. We would definitely use Blackops Coating again."
+        text: "We had a silver cleaning service with a floor power wash. The team arrived on time and did a great job. The garage is clean, fresh, and more organized than before. We would definitely use A1 Concrete Coatings again."
     },
     {
         name: "J Jolly",
@@ -57,7 +57,7 @@ const reviewsData = [
     {
         name: "Tona Coley",
         date: "4 years ago",
-        text: "Andrew and his team transformed my hazardous and depressing garage into a clean and organized space in just a few hours. I can now park my car inside. My neighbor even said he had “garage envy.” Highly recommend Blackops Coating."
+        text: "Andrew and his team transformed my hazardous and depressing garage into a clean and organized space in just a few hours. I can now park my car inside. My neighbor even said he had “garage envy.” Highly recommend A1 Concrete Coatings."
     },
     {
         name: "Christopher Meekins",
@@ -67,7 +67,7 @@ const reviewsData = [
     {
         name: "Mario Martinez",
         date: "Edited 2 years ago",
-        text: "Blackops Coating turned my garage into an actual garage again. The process was much quicker and easier than expected. I don’t usually write reviews, but the results exceeded my expectations."
+        text: "A1 Concrete Coatings turned my garage into an actual garage again. The process was much quicker and easier than expected. I don’t usually write reviews, but the results exceeded my expectations."
     },
     {
         name: "Ileana Carlisle",
@@ -77,12 +77,12 @@ const reviewsData = [
     {
         name: "Juan Toro",
         date: "5 years ago",
-        text: "Blackops Coating did a great job as advertised. They emptied the garage, cleaned thoroughly, and put everything back neatly. Very professional, and I would use them again."
+        text: "A1 Concrete Coatings did a great job as advertised. They emptied the garage, cleaned thoroughly, and put everything back neatly. Very professional, and I would use them again."
     },
     {
         name: "OJ McDuffie",
         date: "3 years ago",
-        text: "Andrew and his team at Blackops Coating were amazing. My garage hasn’t looked this good in 25 years. Zero complaints and outstanding work."
+        text: "Andrew and his team at A1 Concrete Coatings were amazing. My garage hasn’t looked this good in 25 years. Zero complaints and outstanding work."
     },
     {
         name: "Julia Greenberg",
@@ -92,7 +92,7 @@ const reviewsData = [
     {
         name: "Kristy Figueras",
         date: "4 years ago",
-        text: "After an injury prevented me from cleaning, Blackops Coating came through. Andrew and Penny were friendly, professional, and patient. My garage is now organized and stress-free."
+        text: "After an injury prevented me from cleaning, A1 Concrete Coatings came through. Andrew and Penny were friendly, professional, and patient. My garage is now organized and stress-free."
     },
     {
         name: "Kyle Saniga",
@@ -107,17 +107,17 @@ const reviewsData = [
     {
         name: "Sharon Cahoon",
         date: "2 years ago",
-        text: "Fantastic, prompt, courteous, and professional service. Blackops Coating transformed my garage quickly for a house showing with little notice."
+        text: "Fantastic, prompt, courteous, and professional service. A1 Concrete Coatings transformed my garage quickly for a house showing with little notice."
     },
     {
         name: "Theresa Howard",
         date: "5 years ago",
-        text: "My garage was full of clutter. Blackops Coating removed items, cleaned, and helped me purge unwanted belongings. I felt comfortable trusting them with sentimental items."
+        text: "My garage was full of clutter. A1 Concrete Coatings removed items, cleaned, and helped me purge unwanted belongings. I felt comfortable trusting them with sentimental items."
     },
     {
         name: "David Wright",
         date: "2 years ago",
-        text: "The workers were very professional and did a great job. I can finally use my garage again. Would absolutely recommend Blackops Coating."
+        text: "The workers were very professional and did a great job. I can finally use my garage again. Would absolutely recommend A1 Concrete Coatings."
     }
 ];
 
