@@ -31,12 +31,12 @@
 
 .accordion-item-modern:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-    border-color: rgba(212, 175, 55, 0.3);
+    border-color: rgba(30, 111, 191, 0.3);
 }
 
 .accordion-item-modern.active {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    border-color: #D4AF37;
+    border-color: #1E6FBF;
 }
 
 .accordion-header-modern {
@@ -56,7 +56,7 @@
 
 .accordion-header-modern:hover {
     background: #F9FAFB;
-    color: #D4AF37;
+    color: #1E6FBF;
 }
 
 .accordion-icon {
@@ -74,10 +74,9 @@
 }
 
 .accordion-item-modern.active .accordion-icon {
-    background: #D4AF37;
+    background: #1E6FBF;
     color: white;
     transform: rotate(45deg);
-    /* Rotates the plus to an X if using plus/minus logic, or 180 if using carets. Assuming plus here. */
 }
 
 /* If icon is a plus SVG */
@@ -134,18 +133,17 @@
 .whats-next-section {
     padding: 2rem 0 2.5rem 0;
     background-color: #141414;
-    /* Deeper Charcoal */
     background-image:
-        radial-gradient(circle at 15% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 40%),
-        radial-gradient(circle at 85% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 40%);
+        radial-gradient(circle at 15% 50%, rgba(30, 111, 191, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(30, 111, 191, 0.06) 0%, transparent 40%);
     text-align: center;
     border-top: 1px solid #222;
 }
 
-/* Badge Style - Premium Gold */
+/* Badge Style - Brand Blue */
 .whats-next-section .section-badge {
-    background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
-    color: #0F0F0F;
+    background: linear-gradient(135deg, #1E6FBF 0%, #155a9c 100%);
+    color: #FFFFFF;
     display: inline-block;
     padding: 0.4rem 1.25rem;
     margin-bottom: 1.5rem;
@@ -154,7 +152,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+    box-shadow: 0 4px 15px rgba(30, 111, 191, 0.3);
 }
 
 .whats-next-section h2 {
@@ -182,11 +180,9 @@
 }
 
 .next-step-card {
-    background: linear-gradient(180deg, #262420 0%, #1F1D1A 100%);
-    /* Rich Gradient Surface */
+    background: linear-gradient(180deg, #1a2030 0%, #141922 100%);
     border-radius: 12px;
-    border: 1px solid rgba(212, 175, 55, 0.15);
-    /* Subtle Gold Tint */
+    border: 1px solid rgba(30, 111, 191, 0.2);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
     display: flex;
@@ -235,9 +231,9 @@
 
 .next-step-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.15);
-    border-color: rgba(212, 175, 55, 0.6);
-    background: linear-gradient(180deg, #2A2824 0%, #23211D 100%);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 20px rgba(30, 111, 191, 0.2);
+    border-color: rgba(30, 111, 191, 0.6);
+    background: linear-gradient(180deg, #1c2640 0%, #161e32 100%);
 }
 
 .next-step-card:hover .next-step-image img {
@@ -415,10 +411,9 @@
     justify-content: center;
     width: 20px;
     height: 20px;
-    background: #D4AF37;
-    /* Metallic Gold */
-    color: #1A1A1A;
-    /* Dark text */
+    background: #1E6FBF;
+    /* Brand Blue */
+    color: #FFFFFF;
     border-radius: 50%;
     margin-right: 0.75rem;
     font-size: 0.75rem;
