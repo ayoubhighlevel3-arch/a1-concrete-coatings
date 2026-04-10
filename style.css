@@ -348,11 +348,11 @@ nav .btn-cta.active {
   top: 100%;
   left: 0;
   background-color: var(--color-navy);
-  min-width: 200px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  min-width: 230px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
   padding: var(--spacing-sm) 0;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 4px;
+  border-radius: 6px;
   z-index: 101;
 }
 
@@ -373,6 +373,51 @@ nav li:hover .dropdown-menu {
 .dropdown-menu a:hover {
   background-color: rgba(255, 255, 255, 0.05);
   color: var(--color-volt);
+}
+
+/* Categorized dropdown — labels, divider, all-services link */
+.dropdown-category-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-volt);
+  opacity: 1;
+  pointer-events: none;
+  margin-top: 2px;
+}
+
+.dropdown-category-label::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  background: var(--color-volt);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.dropdown-divider-line {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 8px 16px;
+}
+
+.dropdown-all-link {
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+  padding: 10px 16px !important;
+  margin-bottom: 4px;
+}
+
+.dropdown-all-link:hover {
+  color: var(--color-volt) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
 }
 
 nav .btn-cta {
