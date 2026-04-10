@@ -4133,3 +4133,22 @@ footer a:hover {
     display: block;
   }
 }
+
+/* --- Core Mobile Fixes from Audit --- */
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .stat-label {
+    font-size: 0.7rem !important;
+    letter-spacing: 0.5px !important;
+  }
+  
+  .mission-results-section .section-header p {
+    font-size: 1.05rem !important;
+    max-width: 90%;
+    margin: 0 auto 1.5rem;
+  }
+}
