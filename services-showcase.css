@@ -3,11 +3,10 @@
    ========================================= */
 .services-showcase {
     padding: 4.25rem 0 5rem 0;
-    background-color: #1A1A1A;
-    /* Standard Dark */
+    background-color: #0D1826;
     background-image:
-        radial-gradient(circle at 20% 50%, rgba(30, 111, 191, 0.04) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(30, 111, 191, 0.04) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(30, 111, 191, 0.10) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(30, 111, 191, 0.08) 0%, transparent 50%);
 }
 
 /* Services Section Header - Brand Blue Style */
@@ -175,7 +174,7 @@
 
 /* Typography Refresh */
 .service-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     line-height: 1.2;

@@ -243,6 +243,13 @@
             transform: translateY(-4px);
         }
 
+        .diff-card-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
         .diff-icon {
             width: 48px;
             height: 48px;
@@ -251,15 +258,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
-            margin-bottom: 1.25rem;
+            flex-shrink: 0;
+            color: #1E6FBF;
+        }
+
+        .diff-icon svg {
+            width: 26px;
+            height: 26px;
         }
 
         .diff-card h3 {
             color: #f1f5f9;
             font-size: 1.15rem;
             font-weight: 700;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0;
         }
 
         .diff-card p {
@@ -315,6 +327,16 @@
             font-size: 1.15rem;
             font-weight: 700;
             margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .value-card h3 svg {
+            color: #1E6FBF;
+            flex-shrink: 0;
+            width: 22px;
+            height: 22px;
         }
 
         .value-card p {
@@ -502,33 +524,45 @@
             </div>
             <div class="diff-grid">
                 <div class="diff-card">
-                    <div class="diff-icon">⚙️</div>
-                    <h3>Industrial Equipment Only</h3>
+                    <div class="diff-card-header">
+                        <div class="diff-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                        <h3>Industrial Equipment Only</h3>
+                    </div>
                     <p>We use planetary diamond grinders and industrial HEPA vacuum systems — not angle grinders or acid etching. The prep determines the performance.</p>
                 </div>
                 <div class="diff-card">
-                    <div class="diff-icon">🏭</div>
-                    <h3>Commercial-Only Contractor</h3>
+                    <div class="diff-card-header">
+                        <div class="diff-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg></div>
+                        <h3>Commercial-Only Contractor</h3>
+                    </div>
                     <p>We exclusively serve warehouses, factories, food facilities, auto shops, and commercial kitchens. We understand what industrial floors actually need to withstand.</p>
                 </div>
                 <div class="diff-card">
-                    <div class="diff-icon">🕐</div>
-                    <h3>We Work Around Your Schedule</h3>
+                    <div class="diff-card-header">
+                        <div class="diff-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                        <h3>We Work Around Your Schedule</h3>
+                    </div>
                     <p>Nights, weekends, phased section installs — we structure every job around your operational calendar. You don't lose production time for a floor coating.</p>
                 </div>
                 <div class="diff-card">
-                    <div class="diff-icon">📋</div>
-                    <h3>Transparent, Fixed Quotes</h3>
+                    <div class="diff-card-header">
+                        <div class="diff-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M15 2H9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Z"/><path d="m9 14 2 2 4-4"/></svg></div>
+                        <h3>Transparent, Fixed Quotes</h3>
+                    </div>
                     <p>We scope the full project before quoting it. No hidden charges, no surprise add-ons. The price we quote is the price you pay.</p>
                 </div>
                 <div class="diff-card">
-                    <div class="diff-icon">🛡️</div>
-                    <h3>Backed by System Warranties</h3>
+                    <div class="diff-card-header">
+                        <div class="diff-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg></div>
+                        <h3>Backed by System Warranties</h3>
+                    </div>
                     <p>Our polyurea and polyaspartic systems carry industry-leading performance warranties. We stand behind every installation because we know the prep and product are right.</p>
                 </div>
                 <div class="diff-card">
-                    <div class="diff-icon">📍</div>
-                    <h3>Locally Owned, West Michigan Based</h3>
+                    <div class="diff-card-header">
+                        <div class="diff-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 15 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></div>
+                        <h3>Locally Owned, West Michigan Based</h3>
+                    </div>
                     <p>Headquartered in Grand Rapids, MI. We're not a franchise sending out subs. You work with our team from assessment to final walkthrough.</p>
                 </div>
             </div>
@@ -544,15 +578,15 @@
             </div>
             <div class="values-grid">
                 <div class="value-card">
-                    <h3>⚒️ Craftsmanship Over Speed</h3>
+                    <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-8.373 8.373a1 1 0 1 1-1.414-1.414L13.586 10.586"/><path d="m18.293 11.414 1.414-1.414a2 2 0 0 0 0-2.828l-1.172-1.172a2 2 0 0 0-2.828 0l-1.414 1.414a2 2 0 0 0 0 2.828l1.172 1.172a2 2 0 0 0 2.828 0Z"/><path d="M15 12 10.586 7.586a2 2 0 0 0-2.828 0l-1.172 1.172a2 2 0 0 0 0 2.828L11 16"/></svg> Craftsmanship Over Speed</h3>
                     <p>Every floor goes through the same rigorous 6-phase process. We don't rush prep to make a deadline. Good enough doesn't exist in our vocabulary — especially not on an industrial floor that has to survive forklift traffic for 15 years.</p>
                 </div>
                 <div class="value-card">
-                    <h3>🤝 Straight Talk, No Surprises</h3>
+                    <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3-6 6"/><path d="m21 16-1.85 1.85a1 1 0 0 1-3 3l-1.3-1.3a2 2 0 0 1 0-2.82l.85-.85a2 2 0 0 0 0-2.82L13 10.45a2 2 0 0 0-2.82 0l-1.29 1.3a2 2 0 0 0 0 2.82l1.3 1.3a1 1 0 0 1-3 3L5.34 22a1 1 0 0 1-1.41-.01L2.01 20.1a1 1 0 0 1 0-1.42l3.4-3.41a2 2 0 0 1 2.82 0l1.3 1.3a2 2 0 0 0 2.82 0l.85-.85a2 2 0 0 1 2.82 0Z"/></svg> Straight Talk, No Surprises</h3>
                     <p>We tell you what the floor needs, what the system will cost, and what you can realistically expect. We'd rather lose a job on honesty than win it on a promise we can't keep.</p>
                 </div>
                 <div class="value-card">
-                    <h3>🛡️ Commercial-Grade or Nothing</h3>
+                    <h3><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg> Commercial-Grade or Nothing</h3>
                     <p>We use the same materials on a 500 sq ft auto shop as we do on a 50,000 sq ft distribution warehouse. Industrial polyurea base, UV-stable polyaspartic topcoat — every time, no exceptions.</p>
                 </div>
             </div>

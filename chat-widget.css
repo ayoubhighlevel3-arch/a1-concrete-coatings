@@ -1,7 +1,6 @@
 /* Chat Widget Variables */
 :root {
-  --chat-primary: #F5B700;
-  /* Gold */
+  --chat-primary: #1E6FBF;
   --chat-bg: rgba(255, 255, 255, 0.98);
   --chat-text: #0B0C0C;
   --chat-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
@@ -30,13 +29,13 @@
 
 .chat-widget-fab:hover {
   transform: scale(1.1) rotate(-5deg);
-  box-shadow: 0 25px 30px -5px rgba(245, 183, 0, 0.4);
+  box-shadow: 0 25px 30px -5px rgba(30, 111, 191, 0.4);
 }
 
 .chat-widget-fab svg {
   width: 32px;
   height: 32px;
-  color: #000;
+  color: #fff;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 

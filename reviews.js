@@ -210,25 +210,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setupCarouselLogic(container) {
         const SCROLL_SPEED = 1;
-        const SCROLL_INTERVAL = 20;
-        let scrollInterval;
+        let rAFId;
         let isPaused = false;
         let isInteract = false;
 
-        const startAutoScroll = () => {
-            if (scrollInterval) clearInterval(scrollInterval);
-            scrollInterval = setInterval(() => {
+        const scrollStep = () => {
+            // We only need to check for expanded buttons if not interacting
+            // But to avoid DOM query string every frame, we'll assume if there's no interaction, 
+            // nothing changes, but let's be safe and check if needed.
+            if (!isPaused && !isInteract) {
                 const anyExpanded = container.querySelector('.read-more-btn.expanded');
-                if (!isPaused && !isInteract && !anyExpanded) {
+                if (!anyExpanded) {
                     container.scrollLeft += SCROLL_SPEED;
                     if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 5) {
                         container.scrollLeft = 0;
                     }
                 }
-            }, SCROLL_INTERVAL);
+            }
+            rAFId = requestAnimationFrame(scrollStep);
         };
 
-        const stopAutoScroll = () => clearInterval(scrollInterval);
+        const startAutoScroll = () => {
+            if (rAFId) cancelAnimationFrame(rAFId);
+            rAFId = requestAnimationFrame(scrollStep);
+        };
+
+        const stopAutoScroll = () => {
+            if (rAFId) cancelAnimationFrame(rAFId);
+        };
 
         // Interaction Handlers
         container.addEventListener('mouseenter', () => isInteract = true);
