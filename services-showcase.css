@@ -2,7 +2,7 @@
    New Services Showcase Section (Modern)
    ========================================= */
 .services-showcase {
-    padding: 4.25rem 0 5rem 0;
+    padding: 2.5rem 0 3rem 0;
     background-color: #0D1826;
     background-image:
         radial-gradient(circle at 20% 50%, rgba(30, 111, 191, 0.10) 0%, transparent 50%),
@@ -14,13 +14,12 @@
     background: #1E6FBF;
     color: #FFFFFF;
     border-left: none;
-    /* Override global style */
 
     display: inline-block;
     padding: 0.35rem 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -30,26 +29,22 @@
 }
 
 .services-showcase .section-header h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    /* Tighter gap to subtitle */
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
     color: #FFFFFF !important;
     font-weight: 700;
-    letter-spacing: -1px;
-    line-height: 1.1;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
 }
 
 .services-showcase .section-header p {
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    /* Smaller as requested */
+    font-size: 0.9rem;
     color: var(--color-graphite);
-    /* Matches Mission style */
     line-height: 1.6;
-    margin-bottom: 2.5rem;
-    /* Tighter gap to grid */
+    margin-bottom: 2rem;
     margin-top: 0;
-    max-width: 600px;
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -248,7 +243,7 @@
 
     /* Tighten header spacing */
     .services-showcase .section-badge {
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
 
     .services-showcase .section-header h2 {
@@ -260,7 +255,7 @@
 
     .services-showcase .section-header p {
         font-size: 0.9rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem !important;
     }
 
     /* Scrollable carousel container */

@@ -1,0 +1,206 @@
+/* =========================================
+   Service Detail Page Styles (Shared)
+   ========================================= */
+
+/* ─── HERO ─────────────────────────────────────── */
+.service-page-hero {
+    padding: 10rem 0 7rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.service-page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(5, 12, 24, 0.7) 0%, rgba(5, 12, 24, 0.9) 100%);
+    z-index: 1;
+}
+
+.service-page-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.service-page-hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 1.5rem;
+    letter-spacing: -1.5px;
+    font-weight: 800;
+}
+
+.service-page-hero p {
+    font-size: 1.25rem;
+    max-width: 750px;
+    margin: 0 auto 3rem;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+/* ─── OVERVIEW SECTIONS ────────────────────────── */
+.overview-section {
+    padding: 8rem 0;
+    background: #ffffff;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .overview-grid { grid-template-columns: 1fr 1fr; }
+    .overview-grid.alt { direction: rtl; }
+    .overview-grid.alt > * { direction: ltr; }
+}
+
+.overview-content h2 {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    margin-bottom: 2rem;
+    color: #0f172a;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.overview-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #475569;
+    margin-bottom: 2rem;
+}
+
+.overview-image {
+    position: relative;
+}
+
+.overview-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+}
+
+/* ─── WHY SECTION ─────────────────────────────── */
+.why-section {
+    background: #f8fafc;
+    padding: 8rem 0;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .why-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.why-card {
+    background: white;
+    padding: 3rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    text-align: center;
+    border-bottom: 5px solid var(--color-volt);
+    transition: transform 0.3s;
+}
+
+.why-card:hover { transform: translateY(-10px); }
+
+.why-card h3 {
+    color: #0f172a;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.why-card p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* ─── COMPARISON SECTION ────────────────────────── */
+.comparison-section {
+    background: #050c18;
+    padding: 8rem 0;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+@media (min-width: 900px) {
+    .comparison-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.comparison-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    padding: 3rem;
+    transition: all 0.3s;
+}
+
+.comparison-card:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: #1E6FBF;
+}
+
+.comparison-card h3 {
+    color: white;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.comparison-card h3 span {
+    font-size: 0.75rem;
+    background: #1E6FBF;
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* ─── GALLERY STRIP ────────────────────────────── */
+.gallery-strip {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background: #050c18;
+}
+
+@media (min-width: 768px) {
+    .gallery-strip { grid-template-columns: repeat(3, 1fr); }
+}
+
+.gallery-strip img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+.gallery-strip img:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+/* ─── MOBILE ─────────────────────────────────────── */
+@media (max-width: 768px) {
+    .service-page-hero { padding: 8rem 1.5rem 5rem; }
+    .overview-section, .why-section, .comparison-section { padding: 5rem 0; }
+    .comparison-card { padding: 2rem; }
+}
