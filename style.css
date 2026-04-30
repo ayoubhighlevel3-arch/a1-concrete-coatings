@@ -1746,6 +1746,40 @@ footer a:hover {
   background-color: rgba(15, 23, 42, 0.1);
 }
 
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.service-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--color-navy);
+  font-weight: 500;
+}
+
+.service-list li::before {
+  content: '✓';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background-color: var(--color-volt);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
 .service-locations-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -2051,11 +2085,27 @@ footer a:hover {
 
 @media (max-width: 768px) {
   .cta-banner {
-    padding: 2.5rem 0;
+    padding: 2rem 1.25rem;
   }
 
   .cta-banner h2 {
-    font-size: 1.75rem;
+    font-size: 1.45rem;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+  }
+
+  .cta-banner p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  .cta-banner .btn {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 0.85rem 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -3169,8 +3219,28 @@ footer a:hover {
 
 @media (max-width: 768px) {
   .reviews-section {
-    padding: 1rem 0;
-    /* Reduced from 2rem to save mobile space */
+    padding: 2rem 0 1rem;
+  }
+
+  .reviews-section .section-badge {
+    font-size: 0.7rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .reviews-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.25;
+  }
+
+  .reviews-section .section-header p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+  }
+
+  .reviews-section .section-header {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -3392,13 +3462,14 @@ footer a:hover {
   }
 
   .reviews-grid .review-card {
-    min-width: 82vw;
-    max-width: 82vw;
+    min-width: 85vw;
+    max-width: 85vw;
   }
 
   .reviews-grid {
-    gap: 2rem;
-    padding: 2rem 1rem;
+    gap: 1rem;
+    padding: 0.5rem 1.25rem 1.5rem;
+    scroll-padding-left: 1.25rem;
   }
 }
 
