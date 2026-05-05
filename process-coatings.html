@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Process | A1 Concrete Coatings</title>
+    <title>Coating &amp; Flake System Installation Process | A1 Concrete Coatings</title>
     <meta name="description"
-        content="A1 Concrete Coatings follows a proven installation process for both concrete coatings and polished concrete. No shortcuts, no guesswork.">
+        content="A1 Concrete Coatings installs coating and flake systems in eight proven phases — moisture testing, diamond grinding, crack repair, polyurea base coat, full-broadcast flake, and polyaspartic topcoat.">
     <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="style.css">
@@ -44,11 +44,11 @@
             display: inline-block;
             background: #1E6FBF;
             color: #fff;
-            font-size: 0.75rem;
+            font-size: 0.78rem;
             font-weight: 800;
             letter-spacing: 2.5px;
             text-transform: uppercase;
-            padding: 0.35rem 1rem;
+            padding: 0.4rem 1.2rem;
             border-radius: 4px;
             margin-bottom: 1rem;
         }
@@ -65,7 +65,7 @@
         .process-hero p {
             color: #94a3b8;
             max-width: 520px;
-            margin: 0 auto;
+            margin: 0 auto 1.75rem;
             font-size: 1rem;
             line-height: 1.7;
         }
@@ -102,205 +102,119 @@
             font-weight: 500;
         }
 
-        /* Process cards section */
-        .process-cards-section {
+        /* Steps grid */
+        .steps-section {
             background: #f8f9fb;
             padding: 3.5rem 0;
         }
 
-        .process-cards-section .section-intro {
+        .steps-section .section-intro {
             text-align: center;
             margin-bottom: 2rem;
         }
 
-        .process-cards-section .section-intro h2 {
+        .steps-section .section-intro h2 {
             font-size: clamp(1.4rem, 2.5vw, 1.9rem);
             font-weight: 800;
             color: #0d1421;
             margin-bottom: 0.5rem;
         }
 
-        .process-cards-section .section-intro p {
+        .steps-section .section-intro p {
             font-size: 0.95rem;
             color: #64748b;
             max-width: 480px;
             margin: 0 auto;
         }
 
-        .process-cards-grid {
+        .steps-grid {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(2, 1fr);
             gap: 1.25rem;
         }
 
-        @media (min-width: 700px) {
-            .process-cards-grid { grid-template-columns: repeat(2, 1fr); }
+        @media (min-width: 900px) {
+            .steps-grid { grid-template-columns: repeat(4, 1fr); }
         }
 
-        .process-card {
+        @media (max-width: 500px) {
+            .steps-grid { grid-template-columns: 1fr; }
+        }
+
+        .step-card {
             background: #fff;
             border-radius: 12px;
-            padding: 1.75rem 1.5rem;
+            padding: 1.5rem 1.25rem;
             border: 1px solid #e8edf4;
-            text-decoration: none;
-            display: block;
             position: relative;
             overflow: hidden;
-            transition: box-shadow 0.25s ease, transform 0.25s ease;
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
         }
 
-        .process-card:hover {
-            box-shadow: 0 10px 32px rgba(30,111,191,0.12);
-            transform: translateY(-3px);
+        .step-card:hover {
+            box-shadow: 0 8px 28px rgba(30,111,191,0.1);
+            transform: translateY(-2px);
         }
 
-        .process-card::before {
+        .step-card::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
+            height: 3px;
             background: #1E6FBF;
         }
 
-        .card-type {
-            display: inline-block;
-            font-size: 0.68rem;
+        .card-num {
+            font-size: 2.4rem;
             font-weight: 800;
-            letter-spacing: 2px;
+            color: #1E6FBF;
+            line-height: 1;
+            letter-spacing: -2px;
+            margin-bottom: 0.85rem;
+            user-select: none;
+        }
+
+        .card-label {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 800;
+            letter-spacing: 1.8px;
             text-transform: uppercase;
             color: #1E6FBF;
-            margin-bottom: 0.6rem;
-        }
-
-        .process-card h3 {
-            font-size: 1.35rem;
-            font-weight: 800;
-            color: #0d1421;
-            margin-bottom: 0.6rem;
-            line-height: 1.2;
-        }
-
-        .process-card p {
-            font-size: 0.9rem;
-            line-height: 1.7;
-            color: #64748b;
-            margin-bottom: 1.25rem;
-        }
-
-        .card-steps {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .card-step-tag {
-            background: #f1f5f9;
-            color: #475569;
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 0.25rem 0.6rem;
-            border-radius: 20px;
-        }
-
-        .card-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.88rem;
-            font-weight: 700;
-            color: #1E6FBF;
-        }
-
-        .card-link svg {
-            transition: transform 0.2s ease;
-        }
-
-        .process-card:hover .card-link svg {
-            transform: translateX(4px);
-        }
-
-        /* Why section */
-        .why-section {
-            background: #fff;
-            padding: 3.5rem 0;
-            border-top: 1px solid #e8edf4;
-        }
-
-        .why-section .section-intro {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .why-section .section-intro h2 {
-            font-size: clamp(1.4rem, 2.5vw, 1.9rem);
-            font-weight: 800;
-            color: #0d1421;
-            margin-bottom: 0.5rem;
-        }
-
-        .why-section .section-intro p {
-            font-size: 0.95rem;
-            color: #64748b;
-            max-width: 480px;
-            margin: 0 auto;
-        }
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-
-        @media (min-width: 600px) {
-            .why-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-
-        @media (min-width: 900px) {
-            .why-grid { grid-template-columns: repeat(3, 1fr); }
-        }
-
-        .why-card {
-            background: #f8f9fb;
-            border-radius: 10px;
-            padding: 1.25rem 1.5rem;
-            border: 1px solid #e8edf4;
-        }
-
-        .why-card h4 {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: #0d1421;
             margin-bottom: 0.4rem;
         }
 
-        .why-card p {
+        .step-card h3 {
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: #0d1421;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+
+        .step-card p {
             font-size: 0.85rem;
-            line-height: 1.65;
+            line-height: 1.7;
             color: #64748b;
             margin: 0;
         }
 
         @media (max-width: 600px) {
             .process-hero { padding: 2.5rem 0 2rem; }
-            .process-hero p { font-size: 0.95rem; }
-            .process-card { max-width: 100%; min-width: 0; flex-shrink: 1; }
+            .process-hero p { font-size: 0.95rem; margin-bottom: 1.5rem; }
             .stats-bar { padding: 1.1rem 0; }
-            .stats-grid { gap: 0.9rem; }
-            .stat strong { font-size: 1.3rem; }
-            .stat span { font-size: 0.75rem; }
-            .process-cards-section { padding: 2rem 0; }
-            .process-cards-section .section-intro { margin-bottom: 1.25rem; }
-            .process-card { padding: 1.25rem 1rem; }
-            .process-card h3 { font-size: 1.2rem; }
-            .process-card p { margin-bottom: 1rem; }
-            .card-steps { margin-bottom: 1rem; }
-            .why-section { padding: 2rem 0; }
-            .why-section .section-intro { margin-bottom: 1.25rem; }
-            .why-grid { gap: 0.75rem; }
-            .why-card { padding: 1rem 1.25rem; }
+            .stats-grid { gap: 0.75rem; }
+            .stat strong { font-size: 1.2rem; }
+            .stat span { font-size: 0.72rem; }
+            .steps-section { padding: 2rem 0; }
+            .steps-section .section-intro { margin-bottom: 1.25rem; }
+            .steps-grid { gap: 0.75rem; }
+            .step-card { padding: 1.1rem 1rem; }
+            .card-num { font-size: 1.9rem; margin-bottom: 0.5rem; }
+            .step-card h3 { font-size: 0.92rem; margin-bottom: 0.35rem; }
+            .step-card p { font-size: 0.82rem; line-height: 1.65; }
         }
     </style>
 </head>
@@ -360,111 +274,97 @@
 
     <section class="process-hero">
         <div class="container">
-            <span class="hero-badge">The A1 Standard</span>
-            <h1>How We Work</h1>
-            <p>Two systems, two different processes. Both done right &mdash; no shortcuts, no skipped steps, no guesswork on prep.</p>
+            <span class="hero-badge">Coatings &amp; Flake</span>
+            <h1>How We Install a Coating &amp; Flake System</h1>
+            <p>Eight steps. No shortcuts. Timeline depends on the size and condition of the job.</p>
+            <a href="contact.html" class="btn btn-cta">Request A Site Assessment</a>
         </div>
     </section>
 
     <div class="stats-bar">
         <div class="container">
             <div class="stats-grid">
+                <div class="stat"><strong>Job-Dependent</strong><span>Timeline varies by scope</span></div>
+                <div class="stat"><strong>6&ndash;8 hrs</strong><span>Foot traffic ready</span></div>
+                <div class="stat"><strong>4&times;</strong><span>Stronger than epoxy</span></div>
                 <div class="stat"><strong>100%</strong><span>Mechanical prep &mdash; always</span></div>
-                <div class="stat"><strong>4&times;</strong><span>Stronger than standard epoxy</span></div>
-                <div class="stat"><strong>0</strong><span>Shortcuts taken</span></div>
-                <div class="stat"><strong>500+</strong><span>Commercial facilities</span></div>
             </div>
         </div>
     </div>
 
-    <section class="process-cards-section">
+    <section class="steps-section">
         <div class="container">
             <div class="section-intro">
-                <h2>Choose Your System</h2>
-                <p>Select the floor type you're interested in to see the full step-by-step process.</p>
+                <h2>The Installation Process</h2>
+                <p>Every step matters. Here's exactly what we do and why.</p>
             </div>
 
-            <div class="process-cards-grid">
+            <div class="steps-grid">
 
-                <a href="process-coatings.html" class="process-card">
-                    <span class="card-type">Concrete Coatings</span>
-                    <h3>Coating &amp; Flake System</h3>
-                    <p>A layered system built on mechanical prep, a polyurea base coat, full-broadcast vinyl flake, and a polyaspartic topcoat. Designed for facilities that need a durable, chemical-resistant floor with fast return to service.</p>
-                    <div class="card-steps">
-                        <span class="card-step-tag">Moisture Testing</span>
-                        <span class="card-step-tag">Diamond Grinding</span>
-                        <span class="card-step-tag">Crack Repair</span>
-                        <span class="card-step-tag">Polyurea Base Coat</span>
-                        <span class="card-step-tag">Flake Broadcast</span>
-                        <span class="card-step-tag">Polyaspartic Topcoat</span>
-                    </div>
-                    <span class="card-link">
-                        See the full process
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                    </span>
-                </a>
+                <div class="step-card">
+                    <div class="card-num">01</div>
+                    <span class="card-label">Before We Touch the Floor</span>
+                    <h3>Moisture &amp; Slab Testing</h3>
+                    <p>Moisture vapor transmission is the number one reason floor coatings fail early. We test the slab with a calcium chloride or relative humidity probe before committing to any system &mdash; if the numbers are off, we address it before coating.</p>
+                </div>
 
-                <a href="process-polishing.html" class="process-card">
-                    <span class="card-type">Polished Concrete</span>
-                    <h3>Concrete Polishing System</h3>
-                    <p>A progressive diamond grinding process that hardens and refines the concrete itself &mdash; no coating on top. The result is permanent, maintenance-friendly, and gets more reflective with age rather than less.</p>
-                    <div class="card-steps">
-                        <span class="card-step-tag">Slab Inspection</span>
-                        <span class="card-step-tag">Coarse Grinding</span>
-                        <span class="card-step-tag">Densifier Application</span>
-                        <span class="card-step-tag">Honing</span>
-                        <span class="card-step-tag">Fine Polishing</span>
-                        <span class="card-step-tag">Stain Guard</span>
-                    </div>
-                    <span class="card-link">
-                        See the full process
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                    </span>
-                </a>
+                <div class="step-card">
+                    <div class="card-num">02</div>
+                    <span class="card-label">Surface Prep</span>
+                    <h3>Diamond Grinding</h3>
+                    <p>We grind the entire surface with a planetary diamond grinder to achieve a CSP 2&ndash;3 concrete surface profile. This opens the pores of the slab so the polyurea base coat bonds chemically to the concrete rather than just sitting on top of it.</p>
+                </div>
 
-            </div>
-        </div>
-    </section>
+                <div class="step-card">
+                    <div class="card-num">03</div>
+                    <span class="card-label">Prep</span>
+                    <h3>Crack &amp; Spall Repair</h3>
+                    <p>Cracks are chased out and filled with flexible epoxy filler. Any spalled or deteriorated areas get patched and leveled. The coating follows the contour of the slab &mdash; imperfections that aren't fixed now will show through later.</p>
+                </div>
 
-    <section class="why-section">
-        <div class="container">
-            <div class="section-intro">
-                <h2>Why the Process Matters</h2>
-                <p>Most floor failures come back to one thing: skipped prep. Here's what we don't cut corners on.</p>
-            </div>
-            <div class="why-grid">
-                <div class="why-card">
-                    <h4>Moisture Testing First</h4>
-                    <p>Moisture vapor trapped under a coating is the number one cause of early delamination. We test before we commit to any system.</p>
+                <div class="step-card">
+                    <div class="card-num">04</div>
+                    <span class="card-label">Layer 1</span>
+                    <h3>Polyurea Base Coat</h3>
+                    <p>The base coat is rolled and back-rolled across the prepared slab. Polyurea cures faster and stays more flexible than epoxy, giving the system its impact resistance and its bond strength to the concrete. This is the workhorse layer.</p>
                 </div>
-                <div class="why-card">
-                    <h4>Mechanical Prep, Always</h4>
-                    <p>We grind every floor with diamond tooling to a CSP 2&ndash;3 profile. Acid etching and shot blasting don't open pores the same way &mdash; we don't use them.</p>
+
+                <div class="step-card">
+                    <div class="card-num">05</div>
+                    <span class="card-label">Layer 2</span>
+                    <h3>Full-Broadcast Flake</h3>
+                    <p>While the base coat is still wet, vinyl flake is broadcast to rejection &mdash; full, even coverage with no bare spots. The flake locks in as the base coat cures, creating the decorative pattern and adding built-in texture to the surface.</p>
                 </div>
-                <div class="why-card">
-                    <h4>Crack Repair Before Coating</h4>
-                    <p>Coatings print every imperfection underneath them. Anything we don't fix before we coat will show through when it's too late to fix it.</p>
+
+                <div class="step-card">
+                    <div class="card-num">06</div>
+                    <span class="card-label">Between Coats</span>
+                    <h3>Scrape, Grout &amp; Vacuum</h3>
+                    <p>Once the base coat has cured, loose standing flake is scraped flat with a floor scraper and vacuumed clean. Any low spots in the flake layer are filled with a grout coat before the topcoat goes on.</p>
                 </div>
-                <div class="why-card">
-                    <h4>Polyurea, Not Epoxy</h4>
-                    <p>Our base coat is 100% solids polyurea &mdash; faster cure, better bond strength, and more flexible under impact than standard epoxy systems.</p>
+
+                <div class="step-card">
+                    <div class="card-num">07</div>
+                    <span class="card-label">Layer 3</span>
+                    <h3>Polyaspartic Topcoat</h3>
+                    <p>The clear polyaspartic topcoat seals the flake and delivers the final protection: UV stability so it won't yellow, chemical resistance against oils and solvents, and the chosen sheen level &mdash; satin, semi-gloss, or high-gloss.</p>
                 </div>
-                <div class="why-card">
-                    <h4>No Week-Long Shutdowns</h4>
-                    <p>Polyaspartic chemistry means foot traffic in 6&ndash;8 hours. Your facility doesn't stay down while we wait for a slow cure.</p>
+
+                <div class="step-card">
+                    <div class="card-num">08</div>
+                    <span class="card-label">Done</span>
+                    <h3>Return to Service</h3>
+                    <p>Foot traffic in 6&ndash;8 hours. Vehicle traffic the next morning. No week-long cure periods, no strong solvent smell lingering for days. The fast-cure chemistry of polyaspartic is one of its biggest practical advantages over traditional epoxy.</p>
                 </div>
-                <div class="why-card">
-                    <h4>Straight Quotes, No Games</h4>
-                    <p>We assess the slab in person before quoting. What we tell you on-site is what you pay &mdash; no surprises after we've already started grinding.</p>
-                </div>
+
             </div>
         </div>
     </section>
 
     <section class="cta-banner">
         <div class="container">
-            <h2>Not Sure Which System Is Right?</h2>
-            <p>We'll walk the floor with you, answer your questions, and tell you straight which system fits the job &mdash; no sales pressure.</p>
+            <h2>See This Process at Your Facility</h2>
+            <p>Free on-site assessment. We walk the floor, test the slab, and give you a straight quote &mdash; no pressure.</p>
             <a href="contact.html" class="btn btn-cta">Request A Free Site Assessment</a>
         </div>
     </section>

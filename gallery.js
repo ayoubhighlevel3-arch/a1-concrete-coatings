@@ -54,21 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.onclick = null; // Remove inline handler if present
 
         btn.addEventListener('click', (e) => {
-            // Remove active class from all
             filterBtns.forEach(b => b.classList.remove('active'));
-            // Add to clicked
             e.target.classList.add('active');
-
-            // Get category. We need to infer it from the button text or logic
-            // Let's rely on a mapping or checking the button text
-            const text = e.target.textContent.toLowerCase();
-            let category = 'all';
-            if (text.includes('garage')) category = 'garage';
-            else if (text.includes('patio')) category = 'patio';
-            else if (text.includes('basemen')) category = 'basement';
-            else if (text.includes('commercial')) category = 'commercial';
-            else category = 'all';
-
+            const category = e.target.dataset.filter || 'all';
             filterGallery(category);
         });
     });
